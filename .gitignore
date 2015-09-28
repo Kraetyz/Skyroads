@@ -81,3 +81,4 @@ $RECYCLE.BIN/
 *.idb
 *.opensdf
 *.suo
+*.log

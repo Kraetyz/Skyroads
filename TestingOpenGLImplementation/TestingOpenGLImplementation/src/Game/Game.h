@@ -5,6 +5,7 @@
 
 #include "GameState.h"
 #include "Menu.h"
+#include "../Engine/Engine.h"
 
 #include <GLFW/glfw3.h>
 
@@ -14,6 +15,8 @@ private:
 	GLFWwindow* wnd;
 	UserInput* input;
 	GameState* cState;
+
+	Engine* engine;
 public:
 	Game(GLFWwindow* wndhandle);
 	~Game();
