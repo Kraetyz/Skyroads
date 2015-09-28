@@ -5,6 +5,8 @@ Game::Game(GLFWwindow* wndhandle)
 {
 	wnd = wndhandle;
 	input = new UserInput(wndhandle);
+
+	cState = new Menu();
 }
 
 Game::~Game()
@@ -29,6 +31,10 @@ void Game::mainLoop()
 		input->update();
 		if (input->getKey("ESC"))
 			glfwSetWindowShouldClose(wnd, 1);
+
+		cState->update(input);
+
+		/*
 		if (input->getKey("UP"))
 			printf("Pressed\n");
 		if (input->getKey("LEFT"))
@@ -39,7 +45,7 @@ void Game::mainLoop()
 			printf("Pressed\n");
 		if (input->getKey("SPACE"))
 			printf("Pressed\n");
-
+		*/
 		glfwSwapBuffers(wnd);
 	}
 }
