@@ -1,0 +1,2 @@
+0(6) : warning C7022: unrecognized profile specifier "penis"
+0(7) : error C7558: OpenGL does not allow profile specifiers on declarations
